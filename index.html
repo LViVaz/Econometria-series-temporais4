@@ -33,11 +33,7 @@ class: center, middle, inverse, title-slide
 OBS: O conjunto dos números complexos é usado aqui pois os zeros de um polinômio de grau p&gt;1 pode ser real ou complexo. A região definida pelo conjunto dos números complexos z tal que |z|=1 é referido como círculo unitário. 
 
 ---
-#Investigar o ARMA(1,1)
 
-
-
----
 #FUNÇÃO DE AUTOCOVARIÂNCIA ar(1)
 
 
@@ -48,27 +44,25 @@ OBS: O conjunto dos números complexos é usado aqui pois os zeros de um polinô
 ---
 # Função de autocorrelação parcial
 A função de autocorrelação parcial de um processo ARMA é a função `\(\alpha(\cdot)\)` definida pelas equações:
-`\(\alpha(0)=1\)`
-`\(\alpha(h)=\phi_{hh}, h\geq1\)`
-em que `\(\phi_{hh}\)` é a última componente de `\(\phi_h=\Gamma^{-1}\gamma_h\)` em que `\(\Gamma_h=\big[\gamma(i-j)\big]_{i,j=1}^h\)` e `\(\gamma_h=\big[\gamma(1),\gamma(2),\cdots,\gamma(h)\big]\)`
+`$$\alpha(0)=1$$`
+`$$\alpha(h)=\phi_{hh}, h\geq1$$`
+em que `\(\phi_{hh}\)` é a última componente de `$$\phi_h=\Gamma^{-1}\gamma_h$$` em que `$$\Gamma_h=\big[\gamma(i-j)\big]_{i,j=1}^h$$` e `$$\gamma_h=\big[\gamma(1),\gamma(2),\cdots,\gamma(h)\big]$$`
 
 ---
 ## PACF MA(1) para h=2
 
 
-`\begin{matrix}
-\
-\end{matrix}`
+
 
 
 
 ---
 #### Teste de Phillips and Perron - O abstract do artigo.
 
-"This paper proposes new tests for detecting the presence of a unit root in quite general time series models. Our approach is nonparametric with respect to nuisance parameters and thereby allows for a very wide class of weakly dependent and possibly heterogeneously distributed data. The tests accommodate models with a fitted drift and a time trend so that they may be used to discriminate between unit root nonstationarity and stationarity about a deterministic trend. The limiting distributions of the statistics are obtained under both the unit root null and a sequence of local alternatives. The latter noncentral distribution theory yields local asymptotic power functions for the tests and facilitates comparisons with alternative procedures due to Dickey &amp; Fuller. Simulations are reported on the performance of the new tests in finite samples."
+"This paper proposes new tests for detecting the presence of a unit root in quite general time series models. Our approach is nonparametric with respect to nuisance parameters and thereby allows for a very wide class of weakly dependent and possibly ***heterogeneously*** distributed data. The tests accommodate models with a fitted drift and a time trend so that they may be used to discriminate between unit root nonstationarity and stationarity about a deterministic trend. The limiting distributions of the statistics are obtained under both the unit root null and a sequence of local alternatives. The latter noncentral distribution theory yields local asymptotic power functions for the tests and facilitates comparisons with alternative procedures due to Dickey &amp; Fuller. Simulations are reported on the performance of the new tests in finite samples."
 
 ---
-#### Teste de Phillips and Perron - O abstract do artigo. 
+#### Teste KPSS - O abstract do artigo. 
 We propose a test of the null hypothesis that an observable series is stationary around a deterministic trend. The series is expressed as the sum of deterministic trend, random walk, and stationary error, and the test is the LM test of the hypothesis that the random walk has zero variance. The asymptotic distribution of the statistic is derived under the null and under the alternative that the series is difference-stationary. Finite sample size and power are considered in a Monte Carlo experiment. The test is applied to the Nelson-Plosser data, and for many of these series the hypothesis of trend stationarity cannot be rejected.
 ---
 ### Na prática, para séries estacionárias
